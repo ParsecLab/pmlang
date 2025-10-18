@@ -8,5 +8,36 @@ authors = [
     "Naylour <naylour.developer@ya.ru>",
     "ParsecLab"
 ]
+readme = "README.md"
+homepage = "https://github.com/ParsecLab/pmlang.git"
+repository = "https://github.com/ParsecLab/pmlang.git"
+keywords = ["math", "language", "parsec", "dsl", "wasm"]
+categories = ["science", "mathematics", "wasm", "data-structures"]
+publish = true
+
+exclude = [
+    "target/"
+]
+
+[lib]
+name = "pmlang"
+crate-type = ["rlib", "cdylib"]
 
 [dependencies]
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
+lazy_static = "1.4"
+regex = "1.10"
+once_cell = "1.19"
+wasm-bindgen = { version = "0.2", optional = true }
+
+
+[dev-dependencies]
+criterion = "0.5"
+pretty_assertions = "1.4"
+
+
+[features]
+default = ["std"]
+std = []
+wasm = ["wasm-bindgen"]
