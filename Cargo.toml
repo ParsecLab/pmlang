@@ -1,0 +1,12 @@
+[package]
+name = "pmlang"
+description = "Core of Parsec Math Language (PMLang)"
+version = "0.0.1"
+edition = "2024"
+license = "MIT"
+authors = [
+    "Naylour <naylour.developer@ya.ru>",
+    "ParsecLab"
+]
+
+[dependencies]
