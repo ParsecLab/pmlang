@@ -16,11 +16,10 @@ categories = ["science", "mathematics", "wasm", "data-structures"]
 publish = true
 
 include = [
-    "assets/**"
-]
-
-exclude = [
-    "target/"
+    "assets/**",
+    "src/**",
+    "Cargo.toml",
+    "README.md"
 ]
 
 [lib]
