@@ -1,7 +1,7 @@
 [package]
 name = "pmlang"
 description = "Core of Parsec Math Language (PMLang)"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2024"
 license = "MIT"
 authors = [
