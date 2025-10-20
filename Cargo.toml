@@ -1,7 +1,7 @@
 [package]
 name = "pmlang"
 description = "Core of Parsec Math Language (PMLang)"
-version = "0.0.3"
+version = "0.0.4"
 edition = "2024"
 license = "MIT"
 authors = [
@@ -17,6 +17,7 @@ publish = true
 
 include = [
     "assets/**",
+    "grammar/**",
     "src/**",
     "Cargo.toml",
     "README.md"
@@ -32,6 +33,7 @@ lazy_static = "1.4"
 regex = "1.10"
 once_cell = "1.19"
 wasm-bindgen = { version = "0.2", optional = true }
+antlr-rust = "0.2.2"
 
 
 [dev-dependencies]
